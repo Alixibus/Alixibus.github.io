@@ -1,4 +1,48 @@
-.jumbotron_text-center
-{
-.success;
-}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Add a gray background color and some padding to the footer 
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+
+  /*.container-fluid
+  {  
+      background: url(Media/VaporwaveRetro.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }*/
+
+  a
+  {
+    padding: 10px;
+    color: darkgrey;
+  }
+  #splashscreen
+  {
+    height: 100vh;
+    width: 100vw;
+    perspective-origin: 25% 75%;
+    background: url(Media/VaporwaveRetro.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  .splashNameHolder
+  {
+    text-align: center;
+    color: cornsilk;
+    font-size: 100px;
+    padding-top: 10%;
+  }
+  .splashIconHolder
+  {
+    text-align: center;
+    padding-top: 25%;
+  }
