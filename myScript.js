@@ -1,9 +1,18 @@
 $('.enter_link').click(function () {
-    $('#splashscreen').fadeOut(500);
+    $('#splashScreenBSRow').fadeOut(500);
 });
 
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-    var height = $(window).height();
-        $('#splashscreen').css({'opacity':(( height-scroll )/height)});        
-});
+document.getElementById("tabButton1").onclick = function(){clickedButtonOne()};
+function clickedButtonOne()
+{    
+    $('html,body').animate({
+        scrollTop: $("#aboutSection").offset().top},
+        'slow');
+}
+document.getElementById("tabButton2").onclick = function(){clickedButtonTwo()};
+function clickedButtonTwo()
+{
+    $('html,body').animate({
+        scrollTop: $("#workSection").offset().top},
+        'slow');
+}

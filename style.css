@@ -1,3 +1,5 @@
+html, body {margin: 0; height: 100%; overflow: hidden; background-color: black}
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -20,29 +22,173 @@
 
   a
   {
-    padding: 10px;
-    color: darkgrey;
+    padding-top: 20px;
+    color: #0095c2 ;
   }
-  #splashscreen
+  a:hover
   {
-    height: 100vh;
-    width: 100vw;
-    perspective-origin: 25% 75%;
-    background: url(Media/VaporwaveRetro.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    color: #0095c2;
+    text-decoration: none;
   }
+
+  a:active, a:focus
+  {
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+  .navbar
+  {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 50;
+  }
+
+  #navbarName
+  {
+    height: 50%;
+    width: 50%;
+    padding-top: 5px;
+  }
+
   .splashNameHolder
   {
-    text-align: center;
-    color: cornsilk;
-    font-size: 100px;
-    padding-top: 10%;
+    height:50vh;
+    width:50vw;
+    position: fixed;
+    padding-top: 40vh;
+    padding-left: 3vw;
+    z-index: 10; 
   }
   .splashIconHolder
   {
-    text-align: center;
-    padding-top: 25%;
+    position: fixed;
+    padding: 22.6vw;
+    padding-top: 80vh;
+    z-index: 10;    
+  }
+
+  #sideBar
+  {
+    background-color: black;
+    padding-top: 400px;
+    height: 100vh;
+    max-width: 100px;
+    min-width: 100px;
+    position: relative;
+    left: 0px;
+  }
+
+  #twitterBar
+  {
+    background-color: black;
+    min-width: 300px;
+    max-width: 300px;
+    position: fixed;
+    padding-top: 60px;
+    right: 0px;
+  }
+
+  #myVideo 
+  {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+  #externalLinks
+  {
+    padding: 10px;
+  }
+
+  #mainContent
+  {
+    margin-left: 100px; 
+    
+    color: white;  
+    
+    background-color: black;
+  }
+
+  #aboutSection
+  {
+    min-height: 100vh;
+    overflow: visible;
+    overflow: auto;
+  }
+
+  #workSection
+  {
+    min-height: 100vh;
+    overflow: visible;
+    overflow: auto;
+  }
+
+  #contactSection
+  {
+    min-height: 100vh;
+    overflow: visible;
+    overflow: auto;
+  }
+
+  .button
+  {
+    background:url(Media/dashIconV2.png)  no-repeat;
+    background-size: 60%;
+    border: none;
+    height: 10px;
+    width: 80px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button:hover
+  {
+    background-size: 100%;
+  }
+  .button:active, .button:focus, .button
+  {
+    outline: none;
+    border: none;
+  }
+  
+  #splashScreenBSRow
+  {
+    height:100vh;
+    width: 100vw;
+  }
+  .bg-3
+  {
+    padding-top: 60px;
+  }
+  #sideBarContainer
+  {
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    z-index: 40;
+  }
+
+  #aboutIcon
+  {
+    top: 5px;
+    padding: 10px;
+    width: 20vh;
+    height: 20vh;
+  }
+  
+  #contentContainer
+  {
+    width: 80vw;
+  }
+
+  #subContentContainer
+  {
+    margin-right: 15px;
+    margin-left: 15px;
   }
