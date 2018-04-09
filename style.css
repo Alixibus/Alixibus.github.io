@@ -1,4 +1,5 @@
-html, body {margin: 0; height: 100%; overflow: hidden; background-color: black}
+html, body {margin: 0; height: 100%; overflow: scroll; background-color: black}
+
 
 .navbar {
     margin-bottom: 0;
@@ -56,40 +57,56 @@ html, body {margin: 0; height: 100%; overflow: hidden; background-color: black}
 
   .splashNameHolder
   {
-    height:50vh;
-    width:50vw;
-    position: fixed;
-    padding-top: 40vh;
-    padding-left: 3vw;
-    z-index: 10; 
+    max-width:800px;
+    margin:auto;
+    position:relative;
+    z-index:1;
+    margin-top:40vh;
   }
   .splashIconHolder
   {
-    position: fixed;
-    padding: 22.6vw;
-    padding-top: 80vh;
-    z-index: 10;    
+    max-width:50px;
+    margin:auto;
+    position:relative;
+    bottom: 0px;
+    z-index:1;
   }
 
-  #sideBar
+  @media (min-width: 600px)
   {
-    background-color: black;
-    padding-top: 400px;
-    height: 100vh;
-    max-width: 100px;
-    min-width: 100px;
-    position: relative;
-    left: 0px;
+    #sideBar
+    {
+      background-color: black;
+      padding-top: 400px;
+      height: 100vh;
+      max-width: 100px;
+      position: relative;
+      left: 0px;
+    } 
+  }
+
+  @media (max-width: 600px)
+  {
+    #sideBar
+    {
+      background-color: black;
+      padding-top: 400px;
+      height: 100vh;
+      max-width: 50px;
+      position: relative;
+      left: 0px;
+    } 
   }
 
   #twitterBar
   {
     background-color: black;
-    min-width: 300px;
-    max-width: 300px;
-    position: fixed;
+    height:200vh;
     padding-top: 60px;
+    padding-right: 10px;
+    margin-left: 100px;
     right: 0px;
+    overflow: hidden;
   }
 
   #myVideo 
@@ -108,32 +125,31 @@ html, body {margin: 0; height: 100%; overflow: hidden; background-color: black}
 
   #mainContent
   {
-    margin-left: 100px; 
-    
-    color: white;  
-    
+    margin-left: 100px;
+    width: 80vw;  
+    color: white;      
     background-color: black;
   }
 
   #aboutSection
   {
     min-height: 100vh;
-    overflow: visible;
-    overflow: auto;
+    
+    overflow: hidden;
   }
 
   #workSection
   {
     min-height: 100vh;
-    overflow: visible;
-    overflow: auto;
+    
+    overflow: hidden;
   }
 
   #contactSection
   {
     min-height: 100vh;
-    overflow: visible;
-    overflow: auto;
+    
+    overflow: hidden;
   }
 
   .button
@@ -181,14 +197,36 @@ html, body {margin: 0; height: 100%; overflow: hidden; background-color: black}
     width: 20vh;
     height: 20vh;
   }
-  
-  #contentContainer
+
+  #workSubContainer
   {
-    width: 80vw;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
-  #subContentContainer
+  #wrapper
   {
-    margin-right: 15px;
-    margin-left: 15px;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow:hidden;
+  }
+
+  #currentWorkVideo
+  {
+    max-width:600px;
+    max-height:250px;
+  }
+
+  #skillImageHolder
+  {
+    margin-right: 5%;
+    margin-left: 5%;
+    right: 0px;
+  }
+  
+  #aboutSectionContentsHolder
+  {
+    width: 40vw;
+    margin: 0px;
+    padding: 0px;
   }
