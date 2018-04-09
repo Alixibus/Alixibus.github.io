@@ -1,5 +1,5 @@
 $('.enter_link').click(function () {
-    $('#splashScreenBSRow').fadeOut(500);
+    $('#splashScreenRow').fadeOut(500);
 });
 
 document.getElementById("tabButton1").onclick = function(){clickedButtonOne()};
@@ -16,3 +16,16 @@ function clickedButtonTwo()
         scrollTop: $("#workSection").offset().top},
         'slow');
 }
+$(window).resize(function() {
+
+    if ($(this).width() < 1024) {
+  
+      $('#splashScreenRow').hide();
+  
+    } else {
+  
+      $('#splashScreenRow').show();
+  
+      }
+  
+  });
