@@ -1,35 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="container-fluid">
-  <div class="row" id="splashScreenBSRow">
-    <video autoplay muted loop id="myVideo">
-      <source src="Media/BackgroundVideo.mp4" type="video/mp4">
-    </video>
-    <div class="col-sm-12">
-      <div id="wrapper">
-        <div class="splashNameHolder">
-          <img src="Media/NamePlateMain.png">
-        </div>
-
-        <div class="splashIconHolder">
-          <a href="#" class="enter_link">
-            <i class="fas fa-angle-down fa-7x"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <head>
   <title>Alixibus.Test-Site</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="Media/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="Media/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="Media/favicon-16x16.png">
-  <link rel="manifest" href="Media/site.webmanifest">
-  <link rel="mask-icon" href="Media/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="Media\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Media\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Media\favicon-16x16.png">
+  <link rel="manifest" href="Media\site.webmanifest">
+  <link rel="mask-icon" href="Media\safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -38,11 +18,33 @@
     crossorigin="anonymous">
 </head>
 
+
+<div class="container-fluid" id="splashContainer">
+    <div class="row" id="splashScreenBSRow">
+      <video autoplay muted loop id="myVideo">
+        <source src="Media/BackgroundVideo.mp4" type="video/mp4">
+      </video>
+      <div class="col-sm-12">
+        <div id="wrapper">
+          <div class="splashNameHolder">
+            <img src="Media/NamePlateMain.png">
+          </div>
+  
+          <div class="splashIconHolder">
+            <a href="#" class="enter_link">
+              <i class="fas fa-angle-down fa-7x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <img id="navbarName" src="Media/NamePlateTopper.png">
+        <img id="navbarName" src="Media\NamePlateTopper.png">
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -115,42 +117,42 @@
       <br>
 
       <div class="container-fluid bg-3 text-center" id="workSection">
-        <h3>My Work</h3>
+        <h1>My Work</h1>
         <br>
         <div class="row">
           <div class="col-sm-3" id="workSubContainer">
-            <p>Previous Work</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            <p>Previous Work</p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h2>Previous Work</h2>
+            <iframe id="previousVideo" src="https://www.youtube.com/embed/28HC7xxzyjc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Time VR</h4>
+            <p>As part of the Peloozoid Labs team, we created a virtual reality puzzle solver, where the player had to solve
+              a series of puzzles to get to the next level.</p>
+            <p>Primarily, my role on this development was as the lead designer, ensuring the look and the feel of the game fit
+              with our idea’s, creating the assets used throughout and creating some of the puzzles mechanics.</p>
+
           </div>
           <div class="col-sm-4" id="workSubContainer">
-            <p>Current Project</p>
+            <h2>Current Project</h2>
             <video autoplay muted loop id="currentWorkVideo">
               <source src="Work\ProceduralGenerationsystem(White boxed procedural generation - Second Iteration).mp4" type="video/mp4">
             </video>
-            <p>Current Project</p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h3>Project Getaway</h3>
+            <p>For my final project at university I wanted to create a getaway driver game, which utilises procedural generation
+              for level design.</p>
+            <p>The games algorithm creates a tile-based world filled with roads and parks, following a set of rules I have endeavoured
+              to follow from the start.</p>
+            <p>This project showcases a few of the skills I have obtained during my time at university.</p>
           </div>
           <div class="col-sm-3" id="workSubContainer">
-            <p>Previous Work</p>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            <p>Previous Work</p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3" id="workSubContainer">
-            Get in Contact
+            <h2>Previous Work</h2>
+            <iframe id="previousVideo" src="https://www.youtube.com/embed/YSETJAJPNtw?rel=0&amp;controls=0&amp;showinfo=0&amp;mute=1"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h4>Cubes!</h4>
+            <p> Cubes! Was a game I worked on for an assignment during second year, the premise was to navigate a randomised
+              dungeon, turning left or right whilst being chased by a man eating cube.</p>
+            <p>The game was a very crude implementation of randomisation, where the players choice to turn left or right would
+              result in death or progression, during development of this game I learnt a lot and was generally displeased
+              with the final outcome, but to grow we must fail.</p>
           </div>
         </div>
         <br>
@@ -158,6 +160,7 @@
           <div class="col-sm-3" id="workSubContainer">
           </div>
           <div class="col-sm-4" id="workSubContainer">
+            <h1>Thank you for Viewing! Contact details below</h1>
           </div>
           <div class="col-sm-3" id="workSubContainer">
           </div>

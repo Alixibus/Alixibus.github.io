@@ -1,3 +1,7 @@
+
+
+  @media (min-width: 600px)
+  {
 html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  background-color: black}
 
 
@@ -71,9 +75,6 @@ html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  back
     bottom: 0px;
     z-index:1;
   }
-
-  @media (min-width: 600px)
-  {
     #sideBar
     {
       background-color: black;
@@ -83,20 +84,7 @@ html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  back
       position: relative;
       left: 0px;
     } 
-  }
-
-  @media (max-width: 600px)
-  {
-    #sideBar
-    {
-      background-color: black;
-      padding-top: 400px;
-      height: 100vh;
-      max-width: 50px;
-      position: relative;
-      left: 0px;
-    } 
-  }
+  
 
   #twitterBar
   {
@@ -147,8 +135,7 @@ html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  back
 
   #contactSection
   {
-    min-height: 100vh;
-    
+    min-height: 100vh;    
     overflow: hidden;
   }
 
@@ -171,12 +158,6 @@ html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  back
   {
     outline: none;
     border: none;
-  }
-  
-  #splashScreenBSRow
-  {
-    height:100vh;
-    width: 100vw;
   }
   .bg-3
   {
@@ -229,4 +210,91 @@ html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  back
     width: 40vw;
     margin: 0px;
     padding: 0px;
+  }
+  #previousVideo
+  {
+    width: 300px;
+    height: 250px;
+  }
+  }
+  
+
+  @media (max-width: 600px)
+  {
+    #splashContainer
+    {
+      display: none !important;
+    }
+
+  #currentWorkVideo
+  {
+    width:250px;
+    height:200px;
+  }
+
+  #previousVideo
+  {
+    width: 250px;
+    height: 200px;
+  }
+    #sideBarContainer
+  {
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    z-index: 40;
+    padding:0px;
+  }
+    #sideBar
+    {
+      background-color: black;
+      height: 100vh;
+      max-width: 50px;
+      position: relative;
+      left: 0px;
+    }
+    
+    #mainContent
+  {
+    margin-left: 50px;  
+    color: white;      
+    background-color: black;
+  }
+
+  .navbar
+  {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 50;
+  }
+
+  #navbarName
+  {
+    height: 50%;
+    width: 50%;
+    padding-top: 5px;
+  }
+  #twitterBar
+  {
+    background-color: black;
+    width: 300px;
+    margin-left:50px;
+  }  
+
+  #aboutIcon
+  {
+    margin-top:60px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 40vh;
+    height: 40vh;
+  }
+  
+  #aboutSectionContentsHolder
+  {
+    margin: 0px;
+    padding: 0px;
+  }
   }
