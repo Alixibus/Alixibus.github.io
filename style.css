@@ -1,4 +1,4 @@
-html, body {margin: 0; height: 100%; overflow: scroll; background-color: black}
+html, body {margin: 0; height: 100%; overflow-y: auto; overflow-x: hidden;  background-color: black}
 
 
 .navbar {
